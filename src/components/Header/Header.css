@@ -7,6 +7,24 @@ header {
   border-bottom: 1px solid #333333;
 }
 
+header>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header>div>h2 {
+  flex: 1;
+}
+
+header #logo a {
+  color: #fff;
+  font-weight: bold;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -35,4 +53,14 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #bb86fc;
+}
+
+@media (max-width: 474px) {
+  header>div>h2 {
+    text-align: center
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
 }
