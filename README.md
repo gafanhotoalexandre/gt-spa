@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# Meu App React com React Router
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um aplicativo React que simula um simples website com múltiplas páginas. Ele utiliza React Router para gerenciar a navegação entre as páginas e inclui componentes de layout comuns como Header e Footer.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Configuração do React Router para gerenciar as rotas.
+- Páginas principais: Home, Sobre e Postagens.
+- Componente Header com links de navegação.
+- Página de listagem de postagens.
+- Página da postagem.
+- Página de erro 404 para rotas inválidas.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- TypeScript
+- HTML/CSS
 
-- Configure the top-level `parserOptions` property like this:
+## Pré-requisitos
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Node.js
+- npm ou yarn
+
+## Instalação
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/gafanhotoalexandre/gt-spa.git
+cd seu-repositorio
+npm run dev
+# ou
+yarn dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
