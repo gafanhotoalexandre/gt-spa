@@ -1,0 +1,43 @@
+.posts-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: var(--background-color);
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.posts-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.posts-list {
+  margin-top: 2rem;
+}
+
+.post-item {
+  margin-bottom: 2rem;
+}
+
+.post-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-item p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+.post-item a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.post-item a:hover {
+  color: var(--highlight-color);
+}
